@@ -1,0 +1,37 @@
+# Agent OS Standards Index
+
+api:
+  response-envelope:
+    description: All /api routes return { success, data } or { success, error }. /api/health exempt.
+
+global:
+  dry:
+    description: Rule of three — extract on the 3rd repetition. Co-locate first, promote later.
+  fe-performance:
+    description: Bundle size first, server-first rendering, then network/images. Concrete Next 15 rules.
+  imports:
+    description: Use @/... for cross-folder imports; relative paths only within the same folder.
+  models-dtos:
+    description: Two-layer boundary — DB model ≠ API DTO, UI reuses the DTO. Zod for validation.
+
+i18n:
+  adding-a-locale:
+    description: Two steps to add a locale — update routing.ts and create messages/<locale>.json.
+  locale-aware-navigation:
+    description: Import Link/redirect/useRouter from @/i18n/navigation, never from next/*.
+  message-namespaces:
+    description: Group keys under feature namespaces. Every key must exist in every locale file.
+
+nextjs:
+  locale-params:
+    description: Locale pages await params, validate via routing.locales, call setRequestLocale.
+  server-first:
+    description: Server Components by default; "use client" only at the interactive leaf.
+
+tooling:
+  biome:
+    description: Biome is the only linter/formatter. No ESLint, no Prettier. Rules fixed by biome.json.
+  pnpm:
+    description: pnpm only — pinned via packageManager. Never commit npm/yarn lockfiles.
+  pre-merge-checks:
+    description: pnpm lint, pnpm typecheck, pnpm build must all pass before merge.
