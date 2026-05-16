@@ -2,7 +2,9 @@
 
 api:
   response-envelope:
-    description: All /api routes return { success, data } or { success, error }. /api/health exempt.
+    description: Non-tRPC /api routes return { success, data } or { success, error }. /api/health exempt.
+  trpc:
+    description: tRPC v11 is the default API layer. Procedures live under src/server/trpc/, Zod-validated inputs, server components call via createCaller.
 
 global:
   dry:

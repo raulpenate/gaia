@@ -7,7 +7,9 @@ metadata:
 
 # API response envelope
 
-Every `src/app/api/**/route.ts` handler returns this shape:
+**tRPC procedures are the default API layer** (see [[trpc]]). The envelope below applies to **non-tRPC route handlers only** — currently `/api/health` and any future webhooks or healthchecks.
+
+Every non-tRPC `src/app/api/**/route.ts` handler returns this shape:
 
 ```ts
 // success
@@ -29,4 +31,4 @@ NextResponse.json(
 
 DTO validation goes before the response is built — see [[models-dtos]].
 
-Related: [[models-dtos]], [[locale-params]]
+Related: [[trpc]], [[models-dtos]], [[locale-params]]
