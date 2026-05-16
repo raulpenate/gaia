@@ -39,6 +39,31 @@ Based on their response, ask 1-2 clarifying questions if the scope is unclear. E
 - "What's the expected outcome when this is done?"
 - "Are there any constraints or requirements I should know about?"
 
+### Step 1.5: Classify Feature Scope
+
+This step is **mandatory**. Every shaped feature must declare its layer scope up front so the implementer is bound to it and can't drift.
+
+Use AskUserQuestion to capture the scope:
+
+```
+Is this feature FE, BE, or both?
+
+1. **FE** (frontend-only)  — UI, pages, client logic; may touch BE only via
+                             existing standards (response envelope, models-dtos,
+                             server-first, imports)
+2. **BE** (backend-only)   — API routes, db, AI pipeline; must NOT create or
+                             modify any frontend code without re-shaping
+3. **both**                — explicit dual-scope, declared up front
+```
+
+The answer becomes a **hard contract**, not a suggestion:
+
+- Record it in `shape.md` under a `## Scope: <FE | BE | both>` section at the very top, with a one-line justification.
+- Surface it in `plan.md` as a top-of-file banner: `**Scope: <FE | BE | both>**`.
+- Always inject `agent-os/standards/global/feature-scope.md` into `standards.md` regardless of feature type — it's the rule that interprets the scope. This happens in addition to whatever Step 5 surfaces.
+
+If the user is unsure, default to the narrower scope (FE or BE) and let them widen it explicitly. Never default to "both" — `both` should always be an active choice.
+
 ### Step 2: Gather Visuals
 
 Use AskUserQuestion:
@@ -93,10 +118,13 @@ If no product folder exists, skip this step.
 
 Read `agent-os/standards/index.yml` to identify relevant standards based on the feature being built.
 
-Use AskUserQuestion to confirm:
+**`global/feature-scope` is always included** — it's the rule that binds the scope chosen in Step 1.5. Do not present it as optional; do not allow the user to remove it. Include it in `standards.md` regardless of what else they pick.
+
+Use AskUserQuestion to confirm the rest:
 
 ```
-Based on what we're building, these standards may apply:
+Based on what we're building, these standards may apply (in addition to the
+always-included global/feature-scope):
 
 1. **api/response-format** — API response envelope structure
 2. **api/error-handling** — Error codes and exception handling
@@ -126,9 +154,11 @@ Example: `2026-01-15-1430-user-comment-system/`
 
 Now build the plan with **Task 1 always being "Save spec documentation"**.
 
-Present this structure to the user:
+Present this structure to the user. The plan **must** start with a one-line `**Scope: <FE | BE | both>**` banner reflecting the choice from Step 1.5.
 
 ```
+**Scope: <FE | BE | both>**
+
 Here's the plan structure. Task 1 saves all our shaping work before implementation begins.
 
 ---
@@ -137,9 +167,9 @@ Here's the plan structure. Task 1 saves all our shaping work before implementati
 
 Create `agent-os/specs/{folder-name}/` with:
 
-- **plan.md** — This full plan
-- **shape.md** — Shaping notes (scope, decisions, context from our conversation)
-- **standards.md** — Relevant standards that apply to this work
+- **plan.md** — This full plan (includes the Scope banner at the top)
+- **shape.md** — Shaping notes (Scope, decisions, context from our conversation)
+- **standards.md** — Relevant standards that apply to this work, with `global/feature-scope.md` always included
 - **references.md** — Pointers to reference implementations studied
 - **visuals/** — Any mockups or screenshots provided
 
@@ -198,7 +228,12 @@ The shape.md file should capture:
 ```markdown
 # {Feature Name} — Shaping Notes
 
-## Scope
+## Scope: <FE | BE | both>
+
+[One-line justification of why this scope. The implementer is bound by this —
+see global/feature-scope. Scope changes require re-running /shape-spec.]
+
+## Summary
 
 [What we're building, from Step 1]
 
@@ -215,6 +250,7 @@ The shape.md file should capture:
 
 ## Standards Applied
 
+- global/feature-scope — always applied; binds the Scope declared above
 - api/response-format — [why it applies]
 - api/error-handling — [why it applies]
 ```

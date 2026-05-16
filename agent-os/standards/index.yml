@@ -9,6 +9,8 @@ global:
     description: Rule of three — extract on the 3rd repetition. Co-locate first, promote later.
   fe-performance:
     description: Bundle size first, server-first rendering, then network/images. Concrete Next 15 rules.
+  feature-scope:
+    description: Features declare FE / BE / both at shape time. BE-only can't touch FE; FE-only touches BE only via standards.
   imports:
     description: Use @/... for cross-folder imports; relative paths only within the same folder.
   models-dtos:
