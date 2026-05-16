@@ -1,4 +1,11 @@
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { DiagnosisSection } from "@/components/landing/DiagnosisSection";
+import { Footer } from "@/components/landing/Footer";
+import { FreeForeverSection } from "@/components/landing/FreeForeverSection";
+import { Header } from "@/components/landing/Header";
+import { HeroSection } from "@/components/landing/HeroSection";
+import { HowItWorksSection } from "@/components/landing/HowItWorksSection";
+import { ProblemSection } from "@/components/landing/ProblemSection";
+import { setRequestLocale } from "next-intl/server";
 
 export default async function HomePage({
   params,
@@ -7,14 +14,18 @@ export default async function HomePage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("Home");
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center px-6 py-24 text-center">
-      <p className="mb-4 text-xs uppercase tracking-[0.3em] text-emerald-400">Gaia</p>
-      <h1 className="max-w-3xl text-4xl font-semibold leading-tight md:text-6xl">{t("title")}</h1>
-      <p className="mt-6 max-w-2xl text-lg text-zinc-300 md:text-xl">{t("tagline")}</p>
-      <p className="mt-2 max-w-2xl text-sm text-zinc-500">{t("subtitle")}</p>
-    </main>
+    <>
+      <Header />
+      <main>
+        <HeroSection />
+        <ProblemSection />
+        <HowItWorksSection />
+        <DiagnosisSection />
+        <FreeForeverSection />
+      </main>
+      <Footer />
+    </>
   );
 }

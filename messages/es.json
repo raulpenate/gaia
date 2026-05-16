@@ -3,5 +3,125 @@
     "title": "El suelo que ya no puede sanar solo",
     "tagline": "Diagnóstico médico del suelo latinoamericano",
     "subtitle": "Datos satelitales + reportes de comunidades rurales"
+  },
+  "Landing": {
+    "nav": {
+      "home": "Inicio",
+      "problem": "Problema",
+      "howItWorks": "Cómo Funciona",
+      "diagnosis": "Diagnóstico",
+      "access": "Acceso"
+    },
+    "hero": {
+      "title": "El suelo bajo tus pies está tratando de decirte algo.",
+      "subtitle": "SoilMedic escucha. Datos satelitales + tus observaciones de campo = un diagnóstico real para tu tierra.",
+      "cta": "Revisa tu suelo",
+      "subtext": "Sin suscripción. Sin tarjeta de crédito. Gratis para siempre."
+    },
+    "problem": {
+      "label": "El Problema",
+      "title": "La mayoría de las apps miran al cielo. Nadie mira hacia abajo.",
+      "paragraph1": "Las apps del clima rastrean lluvia y temperatura. Los satélites monitorean bosques e inundaciones. Pero el suelo — la capa viva que alimenta comunidades enteras en América Latina — no tiene voz.",
+      "paragraph2": "Solo en El Salvador, miles de familias agricultoras ven fallar sus cosechas sin saber por qué. Las señales están ahí: suelo pálido, sin lombrices, tierra dura que el agua no puede penetrar. Pero no hay herramienta que conecte esas señales con un diagnóstico real.",
+      "paragraph3": "SoilMedic fue creado para cambiar eso. Combina lo que ves en el campo con lo que los satélites ven desde el espacio — y obtén una respuesta real en minutos."
+    },
+    "howItWorks": {
+      "label": "Cómo Funciona",
+      "title": "Tres pasos para conocer tu suelo",
+      "step1": {
+        "title": "Ubica tu parcela",
+        "description": "Dinos dónde está tu tierra. Usa detección GPS automática o marca un punto en el mapa."
+      },
+      "step2": {
+        "title": "Responde 4 preguntas rápidas",
+        "description": "¿De qué color es el suelo? ¿Tiene olor? ¿Hay lombrices? ¿Está duro o suave? No se necesita conocimiento técnico."
+      },
+      "step3": {
+        "title": "Recibe tu diagnóstico",
+        "description": "Cruzamos tus observaciones con datos satelitales de humedad y te damos un reporte claro de salud — más exactamente qué hacer."
+      }
+    },
+    "diagnosis": {
+      "label": "El Diagnóstico",
+      "title": "No datos. Un diagnóstico.",
+      "subtitle": "Traducimos números satelitales a lenguaje claro — y te decimos exactamente qué hacer.",
+      "card1": {
+        "label": "Humedad por Capa",
+        "title": "Entiende qué pasa debajo",
+        "description": "GAIA desglosa la humedad del suelo en cada profundidad, mostrándote exactamente dónde hay agua (y dónde no).",
+        "stat1Label": "Superficie (0–7cm)",
+        "stat1Value": "12% — Muy seco",
+        "stat2Label": "Zona radicular (7–28cm)",
+        "stat2Value": "18% — Estresado",
+        "stat3Label": "Profundo (28–100cm)",
+        "stat3Value": "35% — Adecuado"
+      },
+      "card2": {
+        "label": "Traducción Inteligente",
+        "title": "De datos crudos a próximos pasos",
+        "description": "Los números satelitales no significan nada sin contexto. Los convertimos en decisiones sobre las que puedes actuar hoy.",
+        "stat1Label": "Dato crudo",
+        "stat1Value": "0.12 m³/m³",
+        "stat2Label": "Qué significa",
+        "stat2Value": "Superficie muy seca",
+        "stat3Label": "Qué hacer",
+        "stat3Value": "Aplica mantillo hoy"
+      },
+      "card3": {
+        "label": "Alertas en Tiempo Real",
+        "title": "Nunca pierdas un momento crítico",
+        "description": "Cuando tu suelo necesita atención inmediata, GAIA lo señala al instante y te dice exactamente qué hacer esta semana.",
+        "stat1Label": "Estado",
+        "stat1Value": "Atención urgente necesaria",
+        "stat2Label": "Esta semana",
+        "stat2Value": "Agrega mantillo + detén maquinaria",
+        "stat3Label": "Próximos pasos",
+        "stat3Value": "Inocula red de hongos"
+      }
+    },
+    "access": {
+      "label": "Acceso",
+      "title": "Gratis. Para todos. Siempre.",
+      "paragraph1": "SoilMedic fue creado para comunidades agrícolas, no para corporaciones. No hay planes, ni muros de pago, ni funciones premium detrás de una suscripción. Si tienes un terreno y un teléfono, tienes acceso.",
+      "paragraph2": "Si SoilMedic te ha ayudado y quieres ayudar a mantenerlo funcionando, una pequeña contribución es muy valiosa. Pero es completamente opcional — y nunca cambia lo que puedes acceder.",
+      "cta1": "Empieza a usar GAIA",
+      "cta2": "Apoya el proyecto",
+      "smallPrint": "Tu contribución ayuda a cubrir costos de APIs satelitales e infraestructura de servidores."
+    },
+    "footer": {
+      "tagline": "GAIA · Hecho para la tierra · El Salvador y LATAM · 2026",
+      "support": "Apoya el proyecto",
+      "github": "GitHub"
+    },
+    "signup": {
+      "title": "Crea tu cuenta",
+      "subtitle": "Comienza a monitorear la salud de tu suelo",
+      "brandTagline": "Diagnóstico médico del suelo",
+      "emailLabel": "Correo electrónico",
+      "emailPlaceholder": "tu@correo.com",
+      "passwordLabel": "Contraseña",
+      "passwordPlaceholder": "Crea una contraseña",
+      "submit": "Crear cuenta",
+      "divider": "O continúa con",
+      "google": "Continuar con Google",
+      "hasAccount": "¿Ya tienes cuenta?",
+      "login": "Inicia sesión"
+    }
+  },
+  "Auth": {
+    "signupTab": "Crear cuenta",
+    "signinTab": "Iniciar sesión",
+    "signupTitle": "Crea tu cuenta",
+    "signupDescription": "Comienza a monitorear la salud de tu suelo",
+    "signinTitle": "Bienvenido de vuelta",
+    "signinDescription": "Ingresa a tu cuenta para continuar",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "signupButton": "Crear cuenta",
+    "signinButton": "Iniciar sesión",
+    "orContinueWith": "O continúa con",
+    "forgotPassword": "¿Olvidaste tu contraseña?"
   }
 }
