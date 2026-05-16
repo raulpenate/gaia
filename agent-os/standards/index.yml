@@ -22,6 +22,22 @@ i18n:
   message-namespaces:
     description: Group keys under feature namespaces. Every key must exist in every locale file.
 
+frontend:
+  accessibility:
+    description: Baseline a11y — semantic HTML, keyboard nav, ARIA only when needed, WCAG 2.1 AA target.
+  component-structure:
+    description: One component per file, PascalCase naming, co-locate related files, composition over config.
+  data-fetching:
+    description: Fetch on the server by default, Suspense for streaming, no useEffect(fetch).
+  error-handling:
+    description: Error boundaries per route, typed error returns from actions, user-facing messages via i18n.
+  forms-validation:
+    description: React 19 useActionState + Server Actions + shared Zod schemas for forms.
+  shadcn:
+    description: shadcn/ui primitives in src/components/ui/, customize via Tailwind tokens, compose don't wrap.
+  tailwind-usage:
+    description: Tailwind v4 utility-first, no @apply in components, design tokens via @theme in globals.css.
+
 nextjs:
   locale-params:
     description: Locale pages await params, validate via routing.locales, call setRequestLocale.
