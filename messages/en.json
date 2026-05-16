@@ -3,5 +3,125 @@
     "title": "Soil that can no longer heal alone",
     "tagline": "A medical diagnosis for Latin American soil",
     "subtitle": "Satellite data + reports from rural communities"
+  },
+  "Landing": {
+    "nav": {
+      "home": "Home",
+      "problem": "Problem",
+      "howItWorks": "How It Works",
+      "diagnosis": "Diagnosis",
+      "access": "Access"
+    },
+    "hero": {
+      "title": "The soil beneath your feet is trying to tell you something.",
+      "subtitle": "SoilMedic listens. Satellite data + your field observations = a real diagnosis for your land.",
+      "cta": "Check your soil",
+      "subtext": "No subscription. No credit card. Free forever."
+    },
+    "problem": {
+      "label": "The Problem",
+      "title": "Most apps look at the sky. Nobody looks down.",
+      "paragraph1": "Weather apps track rain and temperature. Satellites monitor forests and floods. But the soil — the living layer that feeds entire communities across Latin America — has no voice.",
+      "paragraph2": "In El Salvador alone, thousands of farming families watch their harvests fail without knowing why. The signs are there: pale soil, no earthworms, hard ground that water can't penetrate. But there's no tool to connect those signs to a real diagnosis.",
+      "paragraph3": "SoilMedic was built to change that. Combine what you see on the ground with what satellites see from space — and get a real answer in minutes."
+    },
+    "howItWorks": {
+      "label": "How It Works",
+      "title": "Three steps to know your soil",
+      "step1": {
+        "title": "Pin your plot",
+        "description": "Tell us where your land is. Use GPS auto-detect or drop a pin on a map."
+      },
+      "step2": {
+        "title": "Answer 4 quick questions",
+        "description": "What color is the soil? Does it smell? Are there earthworms? Is it hard or soft? No technical knowledge needed."
+      },
+      "step3": {
+        "title": "Get your diagnosis",
+        "description": "We cross-reference your observations with satellite moisture data and give you a clear health report — plus exactly what to do."
+      }
+    },
+    "diagnosis": {
+      "label": "The Diagnosis",
+      "title": "Not data. A diagnosis.",
+      "subtitle": "We translate satellite numbers into plain language — and tell you exactly what to do.",
+      "card1": {
+        "label": "Moisture by Layer",
+        "title": "Understand what's happening below",
+        "description": "GAIA breaks down soil moisture at every depth, showing you exactly where water is (and isn't).",
+        "stat1Label": "Surface (0–7cm)",
+        "stat1Value": "12% — Very dry",
+        "stat2Label": "Root zone (7–28cm)",
+        "stat2Value": "18% — Stressed",
+        "stat3Label": "Deep (28–100cm)",
+        "stat3Value": "35% — Adequate"
+      },
+      "card2": {
+        "label": "Smart Translation",
+        "title": "From raw data to next steps",
+        "description": "Satellite numbers mean nothing without context. We convert them into decisions you can act on today.",
+        "stat1Label": "Raw data",
+        "stat1Value": "0.12 m\u00b3/m\u00b3",
+        "stat2Label": "What it means",
+        "stat2Value": "Very dry surface",
+        "stat3Label": "What to do",
+        "stat3Value": "Apply mulch today"
+      },
+      "card3": {
+        "label": "Real-time Alerts",
+        "title": "Never miss a critical moment",
+        "description": "When your soil needs immediate attention, GAIA flags it instantly and tells you exactly what to do this week.",
+        "stat1Label": "Status",
+        "stat1Value": "Urgent attention needed",
+        "stat2Label": "This week",
+        "stat2Value": "Add mulch + stop machinery",
+        "stat3Label": "Next steps",
+        "stat3Value": "Inoculate fungi network"
+      }
+    },
+    "access": {
+      "label": "Access",
+      "title": "Free. For everyone. Always.",
+      "paragraph1": "SoilMedic was built for farming communities, not corporations. There are no tiers, no paywalls, no premium features locked behind a subscription. If you have a plot of land and a phone, you have access.",
+      "paragraph2": "If SoilMedic has helped you and you'd like to help keep it running, a small contribution goes a long way. But it's completely optional — and it never changes what you can access.",
+      "cta1": "Start using GAIA",
+      "cta2": "Support the project",
+      "smallPrint": "Your contribution helps cover satellite API costs and server infrastructure."
+    },
+    "footer": {
+      "tagline": "GAIA · Built for the land · El Salvador & LATAM · 2026",
+      "support": "Support the project",
+      "github": "GitHub"
+    },
+    "signup": {
+      "title": "Create your account",
+      "subtitle": "Start monitoring the health of your soil",
+      "brandTagline": "Medical diagnosis for soil",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@email.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Create a password",
+      "submit": "Create account",
+      "divider": "Or continue with",
+      "google": "Continue with Google",
+      "hasAccount": "Already have an account?",
+      "login": "Log in"
+    }
+  },
+  "Auth": {
+    "signupTab": "Sign up",
+    "signinTab": "Sign in",
+    "signupTitle": "Create your account",
+    "signupDescription": "Start monitoring the health of your soil",
+    "signinTitle": "Welcome back",
+    "signinDescription": "Sign in to your account to continue",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "password": "Password",
+    "signupButton": "Create account",
+    "signinButton": "Sign in",
+    "orContinueWith": "Or continue with",
+    "forgotPassword": "Forgot password?"
   }
 }
